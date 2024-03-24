@@ -35,8 +35,7 @@ const Login = () => {
       password,
     };
 
-    axios
-      .post(`${baseURL}/login`, payload)
+    axios.post(`${baseURL}/login`, payload)
       .then((res) => {
         console.log(res.data);
 
