@@ -37,11 +37,11 @@ export default function Home() {
         pageReady ? "block" : "hidden"
       } w-full h-screen grid place-items-center`}
     >
-      <div className="p-4 bg-accentDark text-white w-[400px] h-[250px] text-center space-y-4">
+      <div className="p-4 bg-accentDark text-white w-[400px]  h-[350px] flex justify-center flex-col items-center text-center space-y-4 rounded-lg shadow-2xl">
         <p>Hi {user?.name}, Welcome!</p>
         <p>{user?.email}</p>
         <button
-          className="bg-accent px-4 py-2 text-white"
+          className="bg-accent px-4 py-2 text-black rounded-3xl"
           onClick={handleLogOut}
         >
           Logout

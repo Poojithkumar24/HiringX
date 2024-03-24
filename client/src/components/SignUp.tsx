@@ -59,9 +59,9 @@ const SignUp = () => {
         className={`${pageReady ? "block" : "hidden"} grid grid-cols-[30%,1fr]`}
       >
         <div className="bg-accent h-screen grid place-items-center">
-          <div className="text-center w-full text-white space-y-8">
+          <div className="text-center w-full text-black space-y-8">
             <h2 className="font-bold text-4xl">Welcome Back!</h2>
-            <div className="text-[#eeeeee] w-fit mx-auto">
+            <div className=" w-fit mx-auto">
               <p>To keep connected with us please</p>
               <p>please login with your personal info</p>
 
@@ -76,7 +76,7 @@ const SignUp = () => {
 
         <div className="h-screen grid place-items-center">
           <div className="text-center">
-            <h1 className="text-accent font-bold text-4xl">Create Account</h1>
+            <h1 className="text-black font-bold text-4xl">Create Account</h1>
             <div className="flex items-center gap-4 pt-8 w-fit mx-auto">
               <div className="icon__wrapper">
                 <FaFacebookF />
@@ -100,7 +100,7 @@ const SignUp = () => {
               <input
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                className="input__style"
+                className="input__style rounded-3xl"
                 type="text"
                 placeholder="Name"
                 required
@@ -108,7 +108,7 @@ const SignUp = () => {
               <input
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="input__style"
+                className="input__style rounded-3xl"
                 type="email"
                 placeholder="Email"
                 required
@@ -116,13 +116,13 @@ const SignUp = () => {
               <input
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                className="input__style"
+                className="input__style rounded-3xl"
                 type="password"
                 placeholder="Password"
                 required
               />
 
-              <button className="uppercase bg-accent hover:bg-accentDark px-4 py-2 text-white mt-4">
+              <button className="uppercase bg-accent hover:bg-accentDark px-4 py-2 mt-4 rounded-3xl">
                 Sign up
               </button>
             </form>

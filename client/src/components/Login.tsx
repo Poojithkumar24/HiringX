@@ -52,9 +52,9 @@ const Login = () => {
     <div
       className={`${pageReady ? "block" : "hidden"} grid grid-cols-[1fr,30%]`}
     >
-      <div className="h-screen grid place-items-center">
+      <div className="h-screen grid place-items-center text-black">
         <div className="text-center">
-          <h1 className="text-accent font-bold text-4xl">
+          <h1 className="text-black font-bold text-4xl">
             Login to Your Account
           </h1>
           <div className="flex items-center gap-4 pt-8 w-fit mx-auto">
@@ -80,7 +80,7 @@ const Login = () => {
             <input
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="input__style"
+              className="input__style rounded-3xl"
               type="email"
               placeholder="Email"
               required
@@ -88,7 +88,7 @@ const Login = () => {
             <input
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className="input__style"
+              className="input__style rounded-3xl"
               type="password"
               placeholder="Password"
               required
@@ -96,22 +96,22 @@ const Login = () => {
 
             <p>Forgot your password?</p>
 
-            <button className="uppercase bg-accent px-4 py-2 text-white mt-4">
+            <button className="uppercase bg-accent px-4 py-2 text-white mt-4 rounded-3xl">
               Login
             </button>
           </form>
         </div>
       </div>
 
-      <div className="bg-accent h-screen grid place-items-center">
-        <div className="text-center w-full text-white space-y-8">
+      <div className="bg-accent h-screen grid place-items-center text-black">
+        <div className="text-center w-full  space-y-8">
           <h2 className="font-bold text-4xl">Hello Friend!</h2>
-          <div className="text-[#eeeeee] w-fit mx-auto">
+          <div className=" w-fit mx-auto">
             <p>Enter your personal details</p>
             <p>and start your journey with us</p>
 
             <Link href="/signup">
-              <button className="uppercase px-4 py-2 w-[100%] rounded-full border-2 mt-8">
+              <button className="uppercase px-4 py-2 w-[100%] rounded-full border-2 mt-8 text-black">
                 Sign up
               </button>
             </Link>
